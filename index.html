@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>تعویض رنگ لباس</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <img src="bg1.jpg">
+      <div id="background"></div>
+      <script type="text/javascript">
+        const bg = document.getElementById('background');
+        function randColor(){
+          return Math.floor(Math.random()*255);
+        }
+        bg.addEventListener('click',()=>{
+          bg.style.backgroundColor = 'rgba('+randColor()+','+randColor()+','+randColor()+')'
+        });
+      </script>
+    </body>
+</html>
